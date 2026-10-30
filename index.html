@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Restaurant</title>
+
+    <!--! Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.css">
+    <script src="./bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer ></script>
+
+
+    <!-- ! HOME PAGE (ME) -->
+    <link rel="stylesheet" href="./style_home.css">
+    <!-- <script src="./script_about.js" defer ></script> -->
+    <script src="./script_home.js" defer ></script>
+
+    <!-- !FOOD MENU PAGE (HAGER) -->
+    <link rel="stylesheet" href="./menu.html"> 
+    <!-- <link rel="stylesheet" href="./style_menu.css"> -->
+    <!-- <script src="./script_menu.js" defer ></script>  -->
+
+    <!-- ! ABOUT PAGE (HAGER) -->
+    <link rel="stylesheet" href="./About.html">
+    
+
+    <!-- !CONTACT PAGE (ME)-->
+    <link rel="stylesheet" href="./contact.html"> 
+
+
+</head>
+<body>
+
+    <!--!========================= Main=========================== -->
+    <main>
+
+        <!--!========================= Header / Navigation=========================== -->
+        <header class="header">
+
+            <nav class="navbar">
+
+                <!--! Logo -->
+                <div class="logo">
+                    <a href="Home.html">
+                        <img src="./Images/logo.svg" alt="Seafood Restaurant Logo">
+                    </a>
+                </div>
+
+
+                <!--!========================= Navigation Links=========================== -->
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="Home.html">HOME</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+
+                    <li>
+                        <a href="menu.html">FOOD MENU</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+
+                </ul>
+
+                <!--! Book Table Button -->
+                <a href="#reservation" class="book-table">
+                    BOOK A TABLE
+                </a>
+
+
+                
+                <!--! Mobile Menu Button -->
+                <button class="menu-toggle" id="menuToggle"
+                        type="button" aria-label="Open navigation menu"
+                        aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </nav>
+
+        </header>
+
+
+        <!--!========================= Hero Section ===========================-->
+            <section class="hero">
+
+                <!--! Dark Overlay -->
+                <div class="hero-overlay"></div>
+
+                <!--! Hero Content -->
+                <div class="hero-content">
+
+                    <h1>
+                        Fresh Seafood & Cozy
+                        <br>
+                        Atmosphere
+                    </h1>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <br>
+                        Ut elit tellus, luctus nec ullamcorper mattis, pulvinar
+                        <br>
+                        dapibus leo.
+                    </p>
+
+                    <a href="menu.html" class="button hero-button">
+                        OUR OFFER
+                    </a>
+
+                </div>
+
+                <!--! Floating Dish Image -->
+                <div class="hero-dish">
+                    <img src="./Images/img-after-hero-400x398.png" alt="Seafood Dish">
+                </div>
+
+            </section>
+
+
+        <!-- !========================= Popular Dishes Section=========================== -->
+            <section class="popular-dishes">
+
+                <!-- !Section Heading -->
+                <div class="section-heading">
+
+                    <h2>
+                        Popular Dishes
+                    </h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut elit tellus, luctus nec ullamcorper mattis,
+                        pulvinar dapibus leo.
+                    </p>
+
+                </div>
+
+
+                <!--! Popular Dishes -->
+                <div class="dishes-container">
+
+                    <!--! Dish 1 -->
+                    <div class="dish">
+
+                        <img src="./Images/dish-1a.jpg" alt="Azure Sushi">
+
+                        <p class="dish-category">
+                            FISH
+                        </p>
+
+                        <h3>
+                            Azure Sushi
+                        </h3>
+
+                    </div>
+
+
+                    <!--! Dish 2 -->
+                    <div class="dish">
+
+                        <img src="./Images/dish-3a.jpg" alt="Fried Shrimps">
+
+                        <p class="dish-category">
+                            CRABS
+                        </p>
+
+                        <h3>
+                            Fryed Shrimps
+                        </h3>
+
+                    </div>
+
+
+                    <!--! Dish 3 -->
+                    <div class="dish">
+
+                        <img src="./Images/dish-2a.jpg" alt="Fresh Salad Fish">
+
+                        <p class="dish-category">
+                            SALAD
+                        </p>
+
+                        <h3>
+                            Fresh Salad Fish
+                        </h3>
+
+                    </div>
+
+
+                    <!--! Dish 4 -->
+                    <div class="dish">
+
+                        <img src="./Images/dish-4a.jpg" alt="Fresh Oysters">
+
+                        <p class="dish-category">
+                            OYSTERS
+                        </p>
+
+                        <h3>
+                            Fresh Oysters
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        <!--!================== Menu Items ================== -->
+            
+        <!--!================== Menu Heading ================== -->
+
+        <div class="menu-heading">
+
+            <h2>
+                Our Menu
+            </h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Ut elit tellus, luctus nec ullamcorper mattis,
+                pulvinar dapibus leo.
+            </p>
+
+        </div>
+        
+        
+        <div class="menu-items">
+                <!--! Menu Item 1 -->
+                <div class="menu-item">
+
+                    <img src="./Images/1.jpeg" alt="Ahi Poke">
+
+                    <div class="menu-item-content">
+
+                        <h4>
+                            Ahi Poke - $17.95
+                        </h4>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!--! Menu Item 2 -->
+                <div class="menu-item">
+
+                    <img src="./Images/2.jpeg" alt="Tuna Sashimi">
+
+                    <div class="menu-item-content">
+
+                        <h4>
+                            Tuna Sashimi - $12.95
+                        </h4>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!--! Menu Item 3 -->
+                <div class="menu-item">
+
+                    <img src="./Images/3.jpeg" alt="Cheesy Garlic">
+
+                    <div class="menu-item-content">
+
+                        <h4>
+                            Cheesy Garlic - $15.95
+                        </h4>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!--! Menu Item 4 -->
+                <div class="menu-item">
+
+                    <img src="./Images/4.jpeg" alt="Blue Fin Tuna">
+
+                    <div class="menu-item-content">
+
+                        <h4>
+                            Blue Fin Tuna - $16.95
+                        </h4>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!--! Menu Item 5 -->
+                <div class="menu-item">
+
+                    <img src="./Images/5.jpeg" alt="Smoked Salmon">
+
+                    <div class="menu-item-content">
+
+                        <h4>
+                            Smoked Salmon - $14.95
+                        </h4>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!--! Menu Item 6 -->
+                <div class="menu-item">
+
+                    <img src="./Images/6.jpeg" alt="Shrimps">
+
+                    <div class="menu-item-content">
+
+                        <h4>
+                            Shrimps - $16.95
+                        </h4>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!--! Menu Item 7 -->
+                <div class="menu-item">
+
+                    <img src="./Images/7.jpeg" alt="Snow Crab">
+
+                    <div class="menu-item-content">
+
+                        <h4>
+                            Snow Crab - $19.95
+                        </h4>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!--! Menu Item 8 -->
+                <div class="menu-item">
+
+                    <img src="./Images/8.jpeg" alt="Albacore Tuna">
+
+                    <div class="menu-item-content">
+
+                        <h4>
+                            Albacore Tuna - $17.95
+                        </h4>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- !=================== Full Menu Botton ================ -->
+                <div class="full-menu-button">
+
+                    <a href="menu.html" class="button">
+                        FULL MENU
+                    </a>
+
+                </div>
+
+
+        <!--!================== Restaurant Specialty Section ================== -->
+
+            <section class="specialty">
+
+                <!-- !Specialty Image -->
+                <div class="specialty-image">
+
+                    <img src="./Images/img-01.jpg" alt="New Caldenonian Salt Prawns">
+
+                </div>
+
+
+                <!--! Specialty Content -->
+                <div class="specialty-content">
+
+                    <p class="specialty-label">
+                        SPECIALTY OF RESTAURANT
+                    </p>
+
+                    <h2>
+                        New Caldenonian Salt Prawns
+                    </h2>
+
+                    <p>
+                        Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+                        Cras ultricies ligula sed magna dictum porta.
+                        Nulla quis lorem ut libero malesuada feugiat.
+                        Curabitur arcu erat.
+                    </p>
+
+                    <!-- ! ============= GET A TASTE BOTTON ============ -->
+                    <a href="menu.html" class="button">
+                        GET A TASTE
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        <!--!================== Customer Reviews Section ================== -->
+
+            <section class="reviews">
+
+                
+                <!--! Reviews Heading + Overall Rating -->
+                <div class="reviews-top">
+
+                    <div class="reviews-heading">
+
+                        <p class="reviews-label">CUSTOMER FEEDBACK</p>
+
+                        <h2>
+                            What Our Visitors Say About Our Food & Services
+                        </h2>
+
+                    </div>
+
+                    <div class="overall-rating">
+
+                        <div class="rating-score">
+                            <h3>4.5</h3>
+                            <p>Out of 5</p>
+
+                            <div class="stars">
+                                <span>★ ★ ★ ★</span><span class="half-star">★</span>
+                            </div>
+                        </div>
+
+                        <div class="rating-sources">
+
+                            <p>
+                                <i class="fa-brands fa-google"></i>
+                                <span>2,395 Ratings</span>
+                            </p>
+
+                            <p>
+                                <i class="fa-brands fa-yelp"></i>
+                                <span>2,547 Ratings</span>
+                            </p>
+
+                            <p>
+                                <i class="fa-brands fa-facebook"></i>
+                                <span>1,785 Ratings</span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!--! Customer Reviews -->
+                <div class="reviews-container">
+
+
+                    <!-- !Review 1 -->
+                    <div class="review-card">
+
+                        <div class="reviewer">
+
+                            <img
+                                src="./Images/90x90-2-1.png" alt="Steve Nash" >
+
+                            <div>
+
+                                <h4>
+                                    BEST QUALITY
+                                </h4>
+
+                                <p class="review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Ut elit tellus, luctus nec ullamcorper mattis,
+                                    pulvinar dapibus leo.
+                                </p>
+
+                                <div class="stars">
+                                    <span>★ ★ ★ ★</span><span class="empty-star">★</span>
+                                </div>
+
+                                <h5>
+                                    John Steven
+                                </h5>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <!--! Review 2 -->
+                    <div class="review-card">
+
+                        <div class="reviewer">
+
+                            <img
+                                src="./Images/90x90-2.png" alt="Steve Nash" >
+
+                            <div>
+
+                                <h4>
+                                    GREAT FOOD!
+                                </h4>
+
+                                <p class="review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Ut elit tellus, luctus nec ullamcorper mattis,
+                                    pulvinar dapibus leo.
+                                </p>
+
+                                <div class="stars">
+                                    <span>★ ★ ★ ★</span><span class="empty-star">★</span>
+                                </div>
+
+                                <h5>
+                                    Steve Nash
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!--! Review 3 -->
+                    <div class="review-card">
+
+                        <div class="reviewer">
+
+                            <img
+                                src="./Images/90x90-3.png"
+                                alt="Emma Smith"
+                            >
+
+                            <div>
+
+                                <h4>
+                                    AMAZING RESTAURANT!
+                                </h4>
+
+                                <p class="review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Ut elit tellus, luctus nec ullamcorper mattis,
+                                    pulvinar dapibus leo.
+                                </p>
+
+                                <div class="stars">
+                                    <span>★ ★ ★ ★</span><span class="empty-star">★</span>
+                                </div>
+
+                                <h5>
+                                    Emma Smith
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!--! Review 4 -->
+                    <div class="review-card">
+
+                        <div class="reviewer">
+
+                            <img src="./Images/90x90-4.png" alt="Sara Jay" >
+
+                            <div>
+
+                                <h4>
+                                    BEST SERVICE!
+                                </h4>
+
+                                <p class="review-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Ut elit tellus, luctus nec ullamcorper mattis,
+                                    pulvinar dapibus leo.
+                                </p>
+
+                                <div class="stars">
+                                    <span>★ ★ ★ ★</span><span class="empty-star">★</span>
+                                </div>
+
+                                <h5>
+                                    Sara Jay
+                                </h5>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        
+            <!--!================== Services Section ================== -->
+
+            <section class="services">
+
+                <!--! Services Heading -->
+                <div class="services-heading">
+
+                    <h2>We Also Offer</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut elit tellus, luctus nec ullamcorper mattis,
+                        pulvinar dapibus leo.
+                    </p>
+
+                </div>
+
+                <!--! Service Cards -->
+                <div class="services-container">
+
+                    <!--! Service 1: Catering -->
+                    
+                    <div class="service-card">
+
+                        <i class="fa-solid fa-tent service-icon"></i>
+
+                        <h3>Catering</h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Ut elit tellus, luctus nec ullamcorper mattis,
+                            pulvinar.
+                        </p>
+
+                        <a href="#" class="button">
+                            VIEW MORE
+                        </a>
+
+                    </div>
+
+                    <!--! Service 2: Private Dining -->
+                    <div class="service-card">
+                        <i class="fa-solid fa-martini-glass-citrus service-icon"></i>
+
+                        <h3>Private Dining</h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Ut elit tellus, luctus nec ullamcorper mattis,
+                            pulvinar.
+                        </p>
+
+                        <a href="#" class="button">
+                            VIEW MORE
+                        </a>
+
+                    </div>
+
+                    <!--! Service 3: Gift Card -->
+                    <div class="service-card">
+                        <i class="fa-solid fa-gift service-icon"></i>
+                        <h3>Gift Card</h3>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Ut elit tellus, luctus nec ullamcorper mattis,
+                            pulvinar.
+                        </p>
+
+                        <a href="#" class="button">
+                            VIEW MORE
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        
+            
+            <!--!================== Follow Us Section ================== -->
+
+            <section class="follow-us" >
+
+                <div class="social-images">
+
+                    <!--! Image 1 -->
+                    <a href="menu.html" class="social-image">
+                        <img src="./Images/instagram-1.jpg" alt="Sushi">
+                    </a>
+
+                    <!--! Image 2 -->
+                    <a href="menu.html" class="social-image">
+                        <img src="./Images/instagram-2.jpg" alt="Fresh Oysters">
+                    </a>
+
+                    <!--! Image 3: Instagram Link -->
+                    <a href="#" class="social-image instagram-feature">
+                        <img src="./Images/instagram-3.jpg" alt="Seafood Platter">
+
+                        <div class="instagram-overlay">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                            <h2>Follow Us</h2>
+
+                        </div>
+
+                    </a>
+
+                    <!--! Image 4 -->
+                    <a href="menu.html" class="social-image">
+                        <img src="./Images/instagram-4.jpg" alt="Sushi Roll">
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        
+            <!--!================== Events Section ================== -->
+
+            <section class="events">
+
+                <!--! Events Heading -->
+                <div class="events-heading">
+
+                    <p class="events-label">EVENTS</p>
+
+                    <h2>Upcoming Events</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut elit tellus, luctus nec ullamcorper mattis,
+                        pulvinar dapibus leo.
+                    </p>
+
+                </div>
+
+                <!--! Events Container -->
+                <div class="events-container">
+
+                    <!--! Event 1: Ladies Lunches -->
+                    <div class="event-card">
+
+                        <div class="event-image">
+                            <img
+                                src="./Images/img-004.jpg"
+                                alt="Ladies Lunches"
+                            >
+                        </div>
+
+                        <div class="event-content">
+
+                            <h3>Ladies Lunches</h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Ut elit tellus, luctus nec ullamcorper mattis,
+                                pulvinar dapibus leo.
+                            </p>
+
+                            <div class="event-footer">
+
+                                <span class="event-date">JUN 24</span>
+
+                                <a href="#" class="button">
+                                    BOOK YOUR TABLE
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--! Event 2: Geek Nights -->
+                    <div class="event-card">
+
+                        <div class="event-image">
+                            <img
+                                src="./Images/img-005.jpg"
+                                alt="Geek Nights"
+                            >
+                        </div>
+
+                        <div class="event-content">
+
+                            <h3>Geek Nights</h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Ut elit tellus, luctus nec ullamcorper mattis,
+                                pulvinar dapibus leo.
+                            </p>
+
+                            <div class="event-footer">
+
+                                <span class="event-date">JUN 26</span>
+
+                                <a href="#" class="button">
+                                    BOOK YOUR TABLE
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        
+            <!--!================== Reservation Section ================== -->
+
+            <section class="reservation" id="reservation">
+
+                <!--! Reservation Content -->
+                <div class="reservation-content">
+
+                    <p class="reservation-label">RESERVATIONS</p>
+
+                    <h2>Book a Table</h2>
+
+                    <p class="reservation-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ut elit tellus, luctus nec ullamcorper mattis,
+                        pulvinar dapibus leo.
+                    </p>
+
+                    <a href="#" class="button">
+                        CALL US NOW
+                    </a>
+
+                </div>
+
+                <!--! Reservation Image -->
+                <div class="reservation-image">
+
+                    <img src="./Images/reservation.jpg" alt="Reserve a table at our seafood restaurant" >
+
+                </div>
+
+            </section>
+
+
+        
+            <!--!================== Contacts Section ================== -->
+            <section class="contacts">
+                <div class="contacts-container">
+
+                    <!--! Contact Information -->
+                    <div class="contact-info">
+                        <h3>Contacts</h3>
+
+                        <p>5 Rue Dalou, 75015 Down Town</p>
+                        <p>+20 010 78 89 56</p>
+                        <p>seafood@gmail.com</p>
+
+                        <img src="./Images/logo-footer.png" alt="Restaurant Logo">
+
+                        <p class="contact-message">
+                            Whisper to us about your feelings, and we will prepare what you need now.
+                        </p>
+                    </div>
+
+                    <!--! Working Hours -->
+                    <div class="working-hours">
+                        <h3>Working Hours</h3>
+
+                        <p>Mon – Fri: <span>7.00am – 6.00pm</span></p>
+                        <p>Sat: <span>7.00am – 6.00pm</span></p>
+                        <p>Sun: <span>8.00am – 6.00pm</span></p>
+                    </div>
+
+                </div>
+            </section>
+
+
+        
+            <!--!================== Footer ================== -->
+            <footer class="footer">
+                <div class="footer-container">
+
+                    <p class="copyright">
+                        Copyright © 2026 Seafood Restaurant
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Telegram">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+
+                        
+                        <!--! Twitter / X -->
+                        <a href="#" onclick="return false;" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <!--! Google -->
+                        <a href="#" onclick="return false;" aria-label="Google">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </footer>
+
+    </main>
+
+</body>
+</html>
