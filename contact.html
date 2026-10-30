@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!--! Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- ! LINK PAGES -->
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./style_contact.css">
+    <script src="./script_contact.js" defer></script>
+
+</head>
+<body>
+    
+
+    <!--!========================= Main=========================== -->
+    <main>
+
+        <!--!========================= Header / Navigation=========================== -->
+        <header class="header">
+
+            <nav class="navbar">
+
+                <!--! Logo -->
+                <div class="logo">
+                    <a href="Home.html">
+                        <img src="./Images/logo.svg" alt="Seafood Restaurant Logo">
+                    </a>
+                </div>
+
+
+                <!--!========================= Navigation Links=========================== -->
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="Home.html">HOME</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">ABOUT</a>
+                    </li>
+
+                    <li>
+                        <a href="menu.html">FOOD MENU</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">CONTACT</a>
+                    </li>
+
+                </ul>
+
+                <!--! Book Table Button -->
+                <a href="#reservation" class="book-table">
+                    BOOK A TABLE
+                </a>
+
+
+                
+                <!--! Mobile Menu Button -->
+                <button class="menu-toggle" id="menuToggle"
+                        type="button" aria-label="Open navigation menu"
+                        aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </nav>
+
+        </header>
+
+        <!--!========================= Hero Section ===========================-->
+            <section class="hero">
+
+                <!--! Dark Overlay -->
+                <div class="hero-overlay"></div>
+
+                <!--! Hero Content -->
+                <div class="hero-content">
+
+                    <h1>
+                        <strong>
+                            Contact Us 
+                        </strong>
+                    </h1>
+
+                </div>
+
+
+            </section>
+
+
+            
+            <!--!================== Contact Section ==================-->
+            <section class="contact-section">
+
+                <div class="contact-container">
+
+                    <!--! Left Side: Contact Form -->
+                    <div class="contact-form-content">
+
+                        <p class="contact-subtitle">CONTACT WITH US</p>
+
+                        <h1>Write Us A Message</h1>
+
+                        <p class="contact-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+
+                        <h2>Simple Contact Form</h2>
+
+                        <!--! Contact Form -->
+                        <form class="contact-form" action="#" method="post">
+
+                            <div class="form-row">
+                                <input type="text" name="firstName" placeholder="First name *" aria-label="First name" require >
+
+                                <input type="text" name="lastName" placeholder="Last name *" aria-label="Last name" require >
+                            </div>
+
+                            <input type="tel" name="phone" placeholder="Phone Number *" aria-label="Phone Number" require >
+
+                            <input type="text" name="subject" placeholder="Subject" aria-label="Subject" >
+
+                            <textarea
+                                name="message" placeholder="Enter your quote" aria-label="Message" rows="5" ></textarea>
+
+                            <button type="submit" class="contact-submit">
+                                Submit
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                    <!--! Right Side: Contact Information -->
+                    <div class="contact-info-list">
+
+                        <!--! Address -->
+                        <div class="contact-info-item">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+
+                            <div class="contact-info-text">
+                                <h3>Address</h3>
+                                <p>5 Rue Dalou, 75015 Paris</p>
+                            </div>
+
+                        </div>
+
+                        <!--! Phone -->
+                        <div class="contact-info-item">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+
+                            <div class="contact-info-text">
+                                <h3>Call Us</h3>
+                                <p>+33 156 78 89 56</p>
+                            </div>
+
+                        </div>
+
+                        <!--! Email -->
+                        <div class="contact-info-item">
+
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                            <div class="contact-info-text">
+                                <h3>Email</h3>
+                                <p>mail@example.com</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            
+            <!--!================== Map Section ==================-->
+            <section class="map-section" id="map">
+
+                <iframe
+                    src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    title="Map showing London Eye"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+
+            </section>
+
+            
+            <!--!================== Contacts Section ==================-->
+            <section class="contacts">
+
+                <div class="contacts-container">
+
+                    <!--! Left Column: Contacts -->
+                    <div class="contact-info">
+
+                        <h3>Contacts</h3>
+
+                        <p>5 Rue Dalou, 75015 Down Town</p>
+                        <p>+20 010 78 89 56</p>
+                        <p>seafood@gmail.com</p>
+
+                    </div>
+
+
+                    <!--! Center Column: Restaurant Logo and Message -->
+                    <div class="contact-center">
+
+                        <img src="./Images/logo-footer.png" alt="Seafood Restaurant Crab Logo">
+
+                        <p class="contact-message">
+                            Whisper to us about your feelings, and we will
+                            prepare what you need now.
+                        </p>
+
+                    </div>
+
+
+                    <!--! Right Column: Working Hours -->
+                    <div class="working-hours">
+
+                        <h3>Working Hours</h3>
+
+                        <p>Mon – Fri: 7.00am – 6.00pm</p>
+                        <p>Sat: 7.00am – 6.00pm</p>
+                        <p>Sun: 8.00am – 6.00pm</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!--!================== Footer ================== -->
+            <footer class="footer">
+                <div class="footer-container">
+
+                    <p class="copyright">
+                        Copyright © 2026 Seafood Restaurant
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="Telegram">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+
+                        
+                        <!--! Twitter / X -->
+                        <a href="#" onclick="return false;" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+
+                        <!--! Google -->
+                        <a href="#" onclick="return false;" aria-label="Google">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </footer>
+
+
+
+    </main>
+
+
+</body>
+</html>

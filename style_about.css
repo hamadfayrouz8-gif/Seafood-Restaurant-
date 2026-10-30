@@ -1,0 +1,1045 @@
+    /* !              silde 1 */
+    /* !                    nav bar  */
+
+
+    body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+    /*! ===== عنوان About Us ===== */
+    .hero-title {
+        position: relative;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        z-index: 2;
+        color: #fff;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 600;
+        padding: 80px 0 100px;
+        margin: 0;
+    }
+
+    /* الموبايل: خلفية للقايمة لما تتفتح */
+    @media (max-width: 700px) {
+        .navbar-collapse {
+        border-radius: 12px;
+        margin-top: 10px;
+        padding: 15px;
+        gap: 50px;
+        }
+        .hero-title {
+        font-size: 2.5rem;
+        padding: 50px 0 70px;
+        
+        }
+    }
+
+
+    /* !================= HEADER ================= */
+
+.header {
+    width: 100%;
+    padding: 25px 60px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/** Logo */
+
+.logo img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+
+/** Navigation Links */
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #f5a000;
+}
+
+
+/** Book Table Button */
+
+.book-table {
+    text-decoration: none;
+    padding: 12px 24px;
+
+    color: #fff;
+    background-color: #f5a000;
+
+    border-radius: 15px;
+}
+
+/* ! ============ Bottoms ========== */
+.button {
+    border-radius: 15px;
+}
+
+.button {
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+/** Mobile Menu Button */
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* !================= RESPONSIVE (Desktop) ================= */
+
+@media (max-width: 1024px) {
+
+    .header {
+        padding: 20px;
+    }
+
+    .nav-links,
+    .book-table {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        border: none;
+        background: none;
+        color: #f5a000;
+        font-size: 25px;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+}
+
+
+/* !================= MOBILE NAVBAR ================= */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/** Tablet and Mobile */
+@media (max-width: 1024px) {
+
+    .header {
+        padding: 20px;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        padding: 25px;
+        margin-top: 15px;
+        background-color: #141c22;
+        border-radius: 10px;
+        z-index: 1000;
+    }
+
+    /** Show links when menu is opened */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        color: #fff;
+    }
+
+    .nav-links a:hover {
+        color: #f5a000;
+    }
+
+    .book-table {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+/* !================= HERO SECTION ================= */
+
+.hero {
+    position: relative;
+    min-height: 500px;
+
+    background-image: url("./Images/inner-banner.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 0 0 50% 50% / 0 0 12% 12%;
+}
+
+.hero {
+    overflow: visible;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.55);
+
+    border-radius: 0 0 50% 50% / 0 0 12% 12%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    color: #fff;
+
+    max-width: 800px;
+
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 16px 45px;
+
+    background-color: #f5a000;
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    border-radius: 15px;
+}
+
+.hero-dish {
+    position: absolute;
+
+    left: 20px;
+    bottom: -120px;
+
+    z-index: 3;
+}
+
+.hero-dish img {
+    width: 380px;
+    height: auto;
+    display: block;
+    transition: 0.3s;
+}
+
+.hero-dish img:hover {
+    transform: translateY(-3px);
+}
+
+/* !================= RESPONSIVE ================= */
+
+/* *======= Tablet =========== */
+
+@media (max-width: 992px) {
+
+    .hero-dish {
+        left: 10px;
+        bottom: -90px;
+    }
+
+    .hero-dish img {
+        width: 280px;
+    }
+
+}
+
+/* * ============ Mobile =============== */
+
+@media (max-width: 576px) {
+
+    .hero-dish {
+        left: 5px;
+        bottom: -60px;
+    }
+
+    .hero-dish img {
+        width: 180px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .hero {
+        min-height: 600px;
+
+        border-radius: 0 0 50% 50% / 0 0 6% 6%;
+    }
+
+}
+
+    /* ===== زرار الموبايل (☰) أبيض ===== */
+    .navbar-toggler {
+        border: 2px solid #fff;
+        color: #fff;
+    }
+
+    .navbar-toggler i,
+    .navbar-toggler .fa-bars {
+        color: #fff !important;
+        font-size: 1.4rem;
+    }
+
+    .navbar-toggler:hover {
+        border-color: #ff7a00;
+    }
+
+    .navbar-toggler:hover i {
+        color: #ff7a00 !important;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: 0 0 0 0.2rem rgba(255, 122, 0, 0.4);
+    }
+
+    /* ===== الروابط بيضا وبرتقالي عند hover ===== */
+    .navbar .nav-link {
+        color: #fff !important;
+        transition: color 0.3s ease;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link:focus,
+    .navbar .nav-link.active {
+        color: #ff7a00 !important;
+    }
+
+
+
+
+
+    .p-silde {
+        color: rgb(189, 77, 3);
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    .h2-silde{
+        font-size: 35px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgba(0, 0, 0, 0.705);
+    } 
+    .p2-silde {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.616);
+        font-size: 15px;
+        position: relative;
+        top: 10px;
+    }
+
+
+
+    /* !                         silde 2 */
+
+    .body-fish{
+        background-color: rgba(255, 255, 255, 0.562);
+        height: 200px;
+        
+        
+    }
+
+    .h2-silde2{
+        color: rgba(0, 0, 0, 0.555);
+        font-size: 25px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .p2-silde2{
+        text-align: center;
+        font-size: 14px;
+        
+    }
+
+
+    /* !                      two  */
+    .body-recicpes{
+            background-color: rgba(255, 255, 255, 0.562);
+        height: 200px;
+        position: relative;
+        top: 20px;
+    }
+
+
+    /* !                   three */
+    .body-wine{
+            background-color: rgba(255, 255, 255, 0.562);
+        height: 200px;
+        position: relative;
+        top: 40px;
+    }
+
+
+
+    .body-fish,
+    .body-recicpes,
+    .body-wine {
+        opacity: 0;
+        transform: translateY(-80px);
+        transition: opacity 0.8s ease, transform 0.8s ease, box-shadow 0.3s ease;
+    }
+
+    /* لما الـ JS يضيف الكلاس */
+    .body-fish.show,
+    .body-recicpes.show,
+    .body-wine.show {
+        opacity: 1;
+        transform: translateY(0);
+    } 
+
+    /* hover على الكارت */
+    .body-fish.show:hover,
+    .body-recicpes.show:hover,
+    .body-wine.show:hover {
+        transform: translateY(-10px) scale(1.03);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* hover على الصورة */
+    .body-fish img,
+    .body-recicpes img,
+    .body-wine img {
+        transition: transform 0.3s ease;
+    }
+
+    .body-fish:hover img,
+    .body-recicpes:hover img,
+    .body-wine:hover img {
+        transform: scale(1.25) rotate(5deg);
+    }
+
+    /* hover على العنوان */
+    .h2-silde2 {
+        transition: color 0.3s ease;
+    }
+
+    .body-fish:hover .h2-silde2,
+    .body-recicpes:hover .h2-silde2,
+    .body-wine:hover .h2-silde2 {
+        color: #e67e22;
+    }
+
+
+    /* !              silde 3  */
+
+    .h2-silde3{
+        text-align: center;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: relative;
+        top: 20px;
+    }
+    .p2-silde3{
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: rgba(0, 0, 0, 0.596);
+    }
+
+
+    .list{
+        line-height: 2;
+        position: relative;
+        top: 50px;
+        left: -30px;
+        color: rgba(0, 0, 0, 0.781);
+    }
+
+
+
+    /* !                    silde 4  */
+    .body-meun1 {
+            background-color: rgba(255, 255, 255, 0.562);
+        height: 200px;
+
+    }
+    .body-meun2{
+            background-color: rgba(255, 255, 255, 0.562);
+        height: 200px;
+    position: relative;
+    top: 20px;
+    }
+
+    .body-meun3{
+            background-color: rgba(255, 255, 255, 0.562);
+        height: 200px;
+        position: relative;
+        top: 40px;
+
+    }
+
+    .body-meun4{
+            background-color: rgba(255, 255, 255, 0.562);
+        height: 200px;
+        position: relative;
+        top: 60px;
+
+    }
+    /* ?              hover */
+    .body-meun1,
+    .body-meun2,
+    .body-meun3,
+    .body-meun4 {
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+    .body-meun1:hover,
+    .body-meun2:hover,
+    .body-meun3:hover,
+    .body-meun4:hover {
+        transform: translateY(-10px) scale(1.05);   /* يطلع لقدام */
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35); /* الظل */
+        z-index: 5;
+    }
+
+
+
+
+
+    
+/* !================= SLIDE 5: CHEFS ================= */
+
+.about-chefs {
+    padding: 70px 0;
+}
+
+.chefs-heading {
+    margin-bottom: 40px;
+}
+
+.h2-silde5 {
+    color: rgba(0, 0, 0, 0.692);
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+.p-silde5 {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.61);
+}
+
+.chefs-list {
+    row-gap: 35px;
+}
+
+.chef-item {
+    text-align: center;
+}
+
+.chef-card {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.chef-card img {
+    display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.h-chef {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 5px;
+}
+
+.p-chef {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    margin-bottom: 0;
+}
+
+@media (max-width: 767.98px) {
+    .about-chefs {
+        padding: 45px 0;
+    }
+
+    .chefs-heading {
+        margin-bottom: 25px;
+    }
+
+    .h2-silde5 {
+        font-size: 28px;
+    }
+
+    .p-silde5 {
+        font-size: 14px;
+        padding: 0 12px;
+    }
+
+    .chef-card img {
+        height: 380px;
+    }
+}
+
+
+
+    /* ?             hover */
+    /* 1. تعريف الحركة */
+    @keyframes fadeInOnScroll {
+        from {
+        opacity: 0;
+        transform: translateY(60px) scale(0.9);
+        }
+        to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        }
+    }
+
+    /* 2. ربط الحركة بالـ Scroll على كلاس .chef-card */
+    .chef-card {
+        animation: fadeInOnScroll linear forwards;
+        animation-timeline: view();
+        animation-range: entry 10% cover 30%;
+    }
+    /* !         silde 6  */
+
+    .pre-silde6{
+            color: rgb(189, 77, 3);
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    .p-silde6{
+        text-align: center;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600px;
+    color: rgba(0, 0, 0, 0.61);
+
+    }
+
+    .btn{
+    position: relative;
+    left: 110px;
+    height: 50px;
+    width: 50%;
+    }
+
+    /* ?         hover  */
+    .hover-pop {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-pop:hover {
+        transform: scale(0.9);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        z-index: 10;
+    }
+
+
+
+
+
+    /* ?                          Tablet  */
+
+    @media (min-width : 700px) {
+        /* !              silde 1 */
+        .p2-silde{
+            position: relative;
+            left: 40px;
+            top: 10px;
+            
+        }
+        
+    .hero-title {
+        position: relative;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: #fff;
+        text-align: center;
+        font-size: 70px;
+        font-weight: 600;
+        padding: 80px 0 100px;
+        margin: 0;
+        position: relative;
+        top: -40px;
+    }
+
+
+
+        /* !            silde 2 */
+        
+    .body-fish{
+        background-color: rgba(255, 255, 255, 0.562);
+        height: 250px;
+        width: 30%;
+        position: relative;
+        left: 30px;
+        
+    }
+        .p2-silde2{
+        text-align: center;
+        font-size: 16px;
+        
+    }
+
+    /* !                      two  */
+    .body-recicpes{
+            background-color: rgba(255, 255, 255, 0.562);
+        height: 250px;
+        width: 30%;
+        position: relative;
+        top: 3px;
+        left: 70px;
+    }
+
+
+    /* !                   three */
+    .body-wine{
+            background-color: rgba(255, 255, 255, 0.562);
+        height: 250px;
+        width: 30%;
+        position: relative;
+        top: 3px;
+        left: 110px;
+    }
+
+
+
+    /* !              silde 3  */
+
+    .h2-silde3{
+        text-align: start;
+        font-size: 30px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position: relative;
+        top: 20px;
+    }
+    .list{
+        line-height: 2;
+        position: relative;
+        top: 10px;
+        left: -30px;
+        
+    }
+
+    /* !              silde 4 */
+        
+    .body-meun1{
+        background-color: rgba(255, 255, 255, 0.562);
+        height: 250px;
+        width: 40%;
+        position: relative;
+        left: 90px;
+        
+        
+    }
+
+    .body-meun2{
+        background-color: rgba(255, 255, 255, 0.562);
+        height: 250px;
+        width: 40%;
+        position: relative;
+        left: 150px;
+        top: 1px;
+    }
+    .body-meun3{
+            background-color: rgba(255, 255, 255, 0.562);
+        height: 250px;
+        width: 40%;
+        position: relative;
+        top: 30px;
+        left: 90px;
+    }
+    .body-meun4{
+            background-color: rgba(255, 255, 255, 0.562);
+        height: 250px;
+        width: 40%;
+        position: relative;
+        left: 150px;
+        top: 30px;
+    }
+
+
+
+
+    
+/* !================= SLIDE 6: RESERVATION ================= */
+
+.about-reservation {
+    padding: 80px 0;
+}
+
+.about-reservation .reservation-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-reservation .pre-silde6 {
+    color: rgb(189, 77, 3);
+    font-size: 17px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-bottom: 12px;
+}
+
+.about-reservation .h2-silde5 {
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.about-reservation .p-silde6 {
+    text-align: start;
+    font-size: 17px;
+    line-height: 1.8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.61);
+    margin: 0 0 25px;
+    max-width: 500px;
+}
+
+.reservation-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+    padding: 12px 28px;
+    background-color: #f5a000;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #f5a000;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.reservation-btn:hover {
+    background-color: transparent;
+    color: #f5a000;
+}
+
+.reservation-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.hover-pop {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-pop:hover {
+    transform: scale(0.97);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767.98px) {
+    .about-reservation {
+        padding: 50px 0;
+    }
+
+    .about-reservation .reservation-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-reservation .h2-silde5 {
+        font-size: 28px;
+    }
+
+    .about-reservation .p-silde6 {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .reservation-image {
+        margin-top: 15px;
+    }
+}
+
+
+
+
+/* !================= ABOUT FOOTER ================= */
+
+.about-footer {
+    background-color: #294052;
+    color: #fff;
+    padding: 55px 0 20px;
+}
+
+.about-footer .footer-column {
+    text-align: center;
+}
+
+.about-footer .contacts {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about-footer .footer-info {
+    color: #d0d0d0;
+    font-size: 14px;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+}
+
+.about-footer .footer-info p {
+    margin-bottom: 8px;
+}
+
+.about-footer .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-footer .footer-logo {
+    display: block;
+    width: 140px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.about-footer .footer-brand .footer-info {
+    max-width: 300px;
+}
+
+.about-footer .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 35px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.about-footer .footer-bottom p {
+    margin: 0;
+    font-size: 13px;
+    color: #d0d0d0;
+}
+
+@media (max-width: 767.98px) {
+    .about-footer {
+        padding: 40px 0 20px;
+    }
+
+    .about-footer .footer-column {
+        text-align: center;
+    }
+
+    .about-footer .contacts {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .about-footer .footer-info {
+        font-size: 13px;
+    }
+
+    .about-footer .footer-bottom {
+        margin-top: 25px;
+    }
+}
+    }
+
+
+

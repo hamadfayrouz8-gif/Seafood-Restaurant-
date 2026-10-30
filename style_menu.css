@@ -1,0 +1,1297 @@
+  /* !    slide 1 */
+  /* body{
+    background-color: rgb(238, 236, 236);
+    height: 700px;
+    width: 100%;
+  }
+
+  .background{
+    background-color: rgba(161, 158, 158, 0.377);
+  }
+  */
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* !================= HERO SECTION ================= */
+
+.hero {
+    position: relative;
+    min-height: 500px;
+
+    background-image: url("./Images/inner-banner.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 0 0 50% 50% / 0 0 12% 12%;
+}
+
+.hero {
+    overflow: visible;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.55);
+
+    border-radius: 0 0 50% 50% / 0 0 12% 12%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    color: #fff;
+
+    max-width: 800px;
+
+    padding: 100px 20px;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 16px 45px;
+
+    background-color: #f5a000;
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    border-radius: 15px;
+}
+
+.hero-dish {
+    position: absolute;
+
+    left: 20px;
+    bottom: -120px;
+
+    z-index: 3;
+}
+
+.hero-dish img {
+    width: 380px;
+    height: auto;
+    display: block;
+    transition: 0.3s;
+}
+
+.hero-dish img:hover {
+    transform: translateY(-3px);
+}
+
+/* !================= RESPONSIVE ================= */
+
+/* *======= Tablet =========== */
+
+@media (max-width: 992px) {
+
+    .hero-dish {
+        left: 10px;
+        bottom: -90px;
+    }
+
+    .hero-dish img {
+        width: 280px;
+    }
+
+}
+
+/* * ============ Mobile =============== */
+
+@media (max-width: 576px) {
+
+    .hero-dish {
+        left: 5px;
+        bottom: -60px;
+    }
+
+    .hero-dish img {
+        width: 180px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .hero {
+        min-height: 600px;
+
+        border-radius: 0 0 50% 50% / 0 0 6% 6%;
+    }
+
+}
+
+  /* .image-1{
+      background-image: url('./Images/inner-banner.jpg');
+      height: 260px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 10px 10px 90% 40%;
+      object-fit: cover;
+      overflow: hidden;
+  }
+  .lanyer-1{
+      background-color:  rgba(68, 64, 64, 0.466);
+      height: 400px;
+      width: 100%;
+      border-radius: 10px 10px 50% 50%;
+  }
+  .h2{
+        color: rgba(255, 255, 255, 0.781);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 600px;
+    font-size:45px;
+    position: relative;
+        top: -150px;
+  }
+
+ */
+
+
+/* !================= HEADER ================= */
+
+.header {
+    width: 100%;
+    padding: 25px 60px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 10;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/** Logo */
+
+.logo img {
+    width: 120px;
+    height: auto;
+    display: block;
+}
+
+
+/** Navigation Links */
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #f5a000;
+}
+
+
+/** Book Table Button */
+
+.book-table {
+    text-decoration: none;
+    padding: 12px 24px;
+
+    color: #fff;
+    background-color: #f5a000;
+
+    border-radius: 15px;
+}
+
+/* ! ============ Bottoms ========== */
+.button {
+    border-radius: 15px;
+}
+
+.button {
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+/** Mobile Menu Button */
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* !================= RESPONSIVE (Desktop) ================= */
+
+@media (max-width: 1024px) {
+
+    .header {
+        padding: 20px;
+    }
+
+    .nav-links,
+    .book-table {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        border: none;
+        background: none;
+        color: #f5a000;
+        font-size: 25px;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+}
+
+
+/* !================= MOBILE NAVBAR ================= */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/** Tablet and Mobile */
+@media (max-width: 1024px) {
+
+    .header {
+        padding: 20px;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        padding: 25px;
+        margin-top: 15px;
+        background-color: #141c22;
+        border-radius: 10px;
+        z-index: 1000;
+    }
+
+    /** Show links when menu is opened */
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        color: #fff;
+    }
+
+    .nav-links a:hover {
+        color: #f5a000;
+    }
+
+    .book-table {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+
+
+  /* !   silde 2   menu 1 */
+
+
+  .image-meun-1{
+      background-image: url('./Images/menu-1.jpg');
+      height: 200px;
+      width: 95%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      overflow: hidden;
+      position: relative;
+      top: 30px;  
+      left: 20px;
+      Border-radius: 5px;
+    
+  }
+  .lanyer-meun-1{
+      background-color:  rgba(68, 64, 64, 0.466);
+      height: 400px;
+      width: 100%;
+      border-radius: 10px 10px 50% 50%;
+      
+  }
+  .meun-1-h2{
+        color: rgba(255, 255, 255, 0.781);
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600px;
+    font-size:30px;
+    position: relative;
+      top: -180px;
+      
+  }
+      
+
+  .meun-1-p{
+        color: rgba(255, 255, 255, 0.781);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 600px;
+    font-size:15px;
+    position: relative;
+        top: 110px;
+        text-align: center;
+      
+  }
+
+
+
+  .text-1{
+      color: rgba(17, 17, 17, 0.781);
+    font-family: Georgia, 'Times New Roman', Times, serif ;  
+    font-weight: 600px;
+    font-size:16px; 
+    position: relative;
+    top: 10px;
+        left: 20px;
+        text-align: center;
+        
+  }
+
+
+
+  .text{
+    color: rgba(17, 17, 17, 0.781);
+    font-family: Georgia, 'Times New Roman', Times, serif ;  
+    font-weight: 600px;
+    font-size:15px; 
+    position: relative;
+    top: 10px;
+        left: 20px;
+      
+  }
+
+
+
+
+
+
+  /* !        meun 2         silde 3 */
+
+
+  .image-meun-2{
+      background-image: url(./Images/menu-2.jpg);
+        height: 200px;
+      width: 95%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      overflow: hidden;
+      Border-radius: 5px;
+      ;
+  }
+
+
+  .lanyer-meun-2{
+        background-color:  rgba(68, 64, 64, 0.466);
+      height: 400px;
+      width: 100%;
+      border-radius: 10px 10px 50% 50%;
+  }
+
+  .meun-2-h2{
+      color: rgba(245, 245, 220, 0.753);
+      font-size: 30px;
+      font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 600px;
+      position: relative;
+      top: 50px;
+    
+  }
+
+  .meun-2-p{
+      color: rgba(255, 255, 255, 0.781);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 600px;
+    font-size:15px;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    
+  
+  }
+
+
+  /* !                  meun 3   */
+
+  .image-meun-3{
+      background-image: url(./Images/menu-3.jpg);
+        height: 200px;
+      width: 95%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      overflow: hidden;
+      Border-radius: 5px;
+  }
+
+  .lanyer-meun-3{
+        background-color:  rgba(68, 64, 64, 0.466);
+      height: 400px;
+      width: 100%;
+      border-radius: 10px 10px 50% 50%;
+  }
+
+
+
+  .meun-3-h2{
+      color: rgba(245, 245, 220, 0.753);
+      font-size: 30px;
+        font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 600px;
+      position: relative;
+      top: 50px;
+    
+  }
+
+  .meun-3-p{
+      color: rgba(255, 255, 255, 0.781);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 600px;
+    font-size:15px;
+    text-align: center;
+    position: relative;
+    top: 60px;}
+
+
+  
+
+
+  /* !    meun  4 */
+
+  .image-meun-4{
+      background-image: url(./Images/menu-4a.jpg);
+        height: 200px;
+      width: 95%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      overflow: hidden;
+      Border-radius: 5px;
+  }
+
+
+
+  .lanyer-meun-4{
+        background-color:  rgba(68, 64, 64, 0.466);
+      height: 400px;
+      width: 100%;
+      border-radius: 10px 10px 50% 50%;
+  }
+
+
+
+  .meun-4-h2{
+      color: rgba(245, 245, 220, 0.753);
+      font-size: 30px;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 600px;
+      position: relative;
+      top: 50px;
+    
+  }
+
+  .meun-4-p{
+      color: rgba(255, 255, 255, 0.781);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 600px;
+    font-size:15px;
+    text-align: center;
+    position: relative;
+    top: 60px;}
+
+
+  /* ?                 hover   */
+  /* الصور */
+  .image-meun-1,
+  .image-meun-2,
+  .image-meun-3,
+  .image-meun-4 {
+    opacity: 0;
+    transform: translateY(-100px); /* من فوق */
+    transition: transform 0.8s ease, opacity 0.8s ease, box-shadow 0.4s ease;
+  }
+
+  /* بعد الظهور */
+  .image-meun-1.show,
+  .image-meun-2.show,
+  .image-meun-3.show,
+  .image-meun-4.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  /* الماوس على الصورة */
+  .image-meun-1.show:hover,
+  .image-meun-2.show:hover,
+  .image-meun-3.show:hover,
+  .image-meun-4.show:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* الكلام */
+  .meun-1-h2,
+  .meun-1-p,
+  .meun-2-h2,
+  .meun-2-p,
+  .meun-3-h2,
+  .meun-3-p,
+  .meun-4-h2,
+  .meun-4-p {
+    opacity: 0;
+    transition: all 0.8s ease;
+  }
+
+  .meun-1-p,
+  .meun-2-p,
+  .meun-3-p,
+  .meun-4-p {
+    transition-delay: 0.3s;
+  }
+
+  .meun-1-h2.show,
+  .meun-1-p.show,
+  .meun-2-h2.show,
+  .meun-2-p.show,
+  .meun-3-h2.show,
+  .meun-3-p.show,
+  .meun-4-h2.show,
+  .meun-4-p.show {
+    opacity: 1;
+  }
+
+  
+/* !================= SLIDE 3: BEST OFFER ================= */
+
+
+/* ! ================ INSTAGRAM GALLERY ================ */
+
+.instagram-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.instagram-gallery-item {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.instagram-gallery-item img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.instagram-gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* ! ================ RESPONSIVE ================ */
+
+@media (max-width: 767.98px) {
+    .instagram-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .instagram-gallery-item img {
+        height: 160px;
+    }
+}
+
+
+
+/* !================= SLIDE 4: FEATURED DISH ================= */
+
+.featured-dish-section {
+    padding: 50px 0 70px;
+}
+
+.image-4 {
+    display: block;
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.image-4:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.featured-dish-content {
+    padding: 15px;
+}
+
+.text-3 {
+    color: rgba(0, 0, 0, 0.801);
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    margin-bottom: 20px;
+}
+
+.pre-2 {
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.insurance-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px;
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 15px;
+}
+
+.insurance-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+.insurance-list li img {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-top: 2px;
+}
+
+.featured-dish-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 26px;
+    border: 1px solid #343a40;
+    border-radius: 15px;
+    background-color: #343a40;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.featured-dish-btn:hover {
+    background-color: #f5a000;
+    border-color: #f5a000;
+    color: #fff;
+}
+
+
+/* !================= FOOTER ================= */
+
+.footer {
+    background-color: rgba(201, 201, 197, 0.432);
+    padding: 45px 0 20px;
+}
+
+.footer-column {
+    text-align: center;
+}
+
+.contacts {
+    color: #222;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+.text-5 {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+.text-5 p {
+    margin-bottom: 8px;
+}
+
+.logo-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-5 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.logo-5 .text-5 {
+    max-width: 300px;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 13px;
+}
+
+
+/* !================= RESPONSIVE ================= */
+
+@media (max-width: 767.98px) {
+
+    /* .best-offer-section {
+        padding: 35px 0 40px;
+    }
+
+    .best-offer-carousel .carousel-item img {
+        height: 250px;
+    }
+
+    .best-offer-content {
+        margin-top: 25px;
+        padding: 0 10px;
+    }
+
+    
+    .pre-1 {
+      font-size: 14px;
+      } */
+      
+      .text-2 {
+          font-size: 28px;
+      }
+
+    .featured-dish-section {
+        padding: 35px 0 45px;
+    }
+
+    .image-4 {
+        height: 280px;
+    }
+
+    .featured-dish-content {
+        padding: 10px 5px;
+    }
+
+    .text-3 {
+        font-size: 25px;
+    }
+
+    .pre-2 {
+        font-size: 14px;
+    }
+
+    .insurance-list {
+        font-size: 14px;
+    }
+
+    .featured-dish-btn {
+        margin-top: 5px;
+    }
+
+    .footer {
+        padding: 35px 0 20px;
+    }
+
+    .contacts {
+        font-size: 19px;
+        margin-bottom: 12px;
+    }
+
+    .text-5 {
+        font-size: 13px;
+    }
+}
+
+
+/* ! Respect reduced motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+    .image-4 {
+        transition: none;
+    }
+}
+
+
+
+
+
+  /* ?        tablet  */
+
+
+
+  @media (min-width : 700px) {
+      
+  /* !    slide 1 */
+  body{
+    background-color: rgb(238, 236, 236);
+    height: 500px;
+    width: 100%;
+  }
+
+  .background{
+    background-color: rgba(161, 158, 158, 0.377);
+    
+  }
+
+  .image-1{
+      background-image: url('./Images/inner-banner.jpg');
+      height: 330px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 10px 10px 90% 40%;
+      object-fit: cover;
+      overflow: hidden;
+  }
+  .lanyer-1{
+      background-color:  rgba(68, 64, 64, 0.466);
+      height: 500px;
+      width: 100%;
+      border-radius: 10px 10px 90% 40%;
+  }
+  .h2{
+        color: rgba(255, 255, 255, 0.781);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 600px;
+    font-size:60px;
+    position: relative;
+        top: -150px;
+  }
+
+
+  .logo{
+      position: relative;
+      left: 50px;
+
+  }
+
+
+
+
+
+
+  /* !   silde 2   menu 1 */
+
+
+  .background-1{
+  background-color: rgb(238, 236, 236);
+      height: 400px;
+      width: 100%;
+  }
+  .image-meun-1{
+      background-image: url('./Images/menu-1.jpg');
+      height: 250px;
+      width: 97%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      overflow: hidden;
+      position: relative;
+      top: 50px;  
+      left: 25px;
+      border-radius: 5px;
+
+  }
+  .lanyer-meun-1{
+      background-color:  rgba(68, 64, 64, 0.466);
+      height: 400px;
+      width: 100%;
+      border-radius: 10px 10px 50% 50%;
+  }
+  .meun-1-h2{
+        color: rgba(255, 255, 255, 0.781);
+      font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600px;
+    font-size:30px;
+    position: relative;
+        top: -180px;
+  }
+  .meun-1-p{
+        color: rgba(255, 255, 255, 0.781);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 600px;
+    font-size:15px;
+    position: relative;
+        top: 130px;
+        text-align: center;
+  }
+
+
+
+
+  /* !        meun 2         silde 3 */
+
+
+  .image-meun-2{
+      background-image: url(./Images/menu-2.jpg);
+        height: 250px;
+      width: 95%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      overflow: hidden;
+      Border-radius: 5px;
+  }
+
+
+  .lanyer-meun-2{
+        background-color:  rgba(68, 64, 64, 0.466);
+      height: 400px;
+      width: 100%;
+      border-radius: 10px 10px 50% 50%;
+  }
+
+
+  /* !                  meun 3   */
+
+  .image-meun-3{
+      background-image: url(./Images/menu-3.jpg);
+        height: 250px;
+      width: 95%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      overflow: hidden;
+      Border-radius: 5px;
+  }
+
+  .lanyer-meun-3{
+        background-color:  rgba(68, 64, 64, 0.466);
+      height: 400px;
+      width: 100%;
+      border-radius: 10px 10px 50% 50%;
+  }
+
+
+  /* !                  meun 3   */
+
+  .image-meun-4{
+      background-image: url(./Images/menu-4a.jpg);
+        height: 250px;
+      width: 95%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      overflow: hidden;
+      Border-radius: 5px;
+  }
+
+  .lanyer-meun-4{
+        background-color:  rgba(68, 64, 64, 0.466);
+      height: 400px;
+      width: 100%;
+      border-radius: 10px 10px 50% 50%;
+  }
+
+
+
+
+  /* ?           Desktop          */
+
+
+
+
+    @media (min-width : 900px){
+      
+
+  /* !   silde 2   menu 1 */
+
+
+  .background-1{
+  background-color: rgb(238, 236, 236);
+      height: 400px;
+      width: 100%;
+  }
+  .image-meun-1{
+      background-image: url('./Images/menu-1.jpg');
+      height: 330px;
+      width: 85%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      overflow: hidden;
+      position: relative;
+      top: 90px;  
+      left: 25px;
+      border-radius: 5px;
+
+  }
+  .lanyer-meun-1{
+      background-color:  rgba(68, 64, 64, 0.466);
+      height: 400px;
+      width: 100%;
+      border-radius: 10px 10px 50% 50%;
+  }
+  .meun-1-h2{
+        color: rgba(255, 255, 255, 0.781);
+      font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600px;
+    font-size:36px;
+    position: relative;
+        top: -150px;
+  }
+  .meun-1-p{
+        color: rgba(255, 255, 255, 0.781);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 600px;
+    font-size:19px;
+    position: relative;
+        top: 180px;
+        text-align: center;
+  }
+
+
+
+  /* !        meun 2         silde 3 */
+
+
+  .image-meun-2{
+      background-image: url(./Images/menu-2.jpg);
+        height: 330px;
+      width: 85%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      overflow: hidden;
+      Border-radius: 5px;
+      position: relative;
+      
+      left: 40px;
+  }
+
+
+  .lanyer-meun-2{
+        background-color:  rgba(68, 64, 64, 0.466);
+      height: 400px;
+      width: 100%;
+      border-radius: 10px 10px 50% 50%;
+  }
+
+  .meun-2-h2{
+      color: rgba(245, 245, 220, 0.753);
+      font-size: 36px;
+        font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 600px;
+      position: relative;
+      top: 140px;
+  }
+
+  .meun-2-p{
+      color: rgba(255, 255, 255, 0.781);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 600px;
+    font-size:19px;
+    text-align: center;
+    position: relative;
+    top: 140px;
+  }
+
+
+
+
+
+  /* !                        meun 3 */
+  .image-meun-3{
+      background-image: url(./Images/menu-3.jpg);
+        height: 320px;
+      width: 85%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      overflow: hidden;
+      Border-radius: 5px;
+  }
+
+  .lanyer-meun-3{
+        background-color:  rgba(68, 64, 64, 0.466);
+      height: 400px;
+      width: 100%;
+      border-radius: 10px 10px 50% 50%;
+  }
+
+
+
+  .meun-3-h2{
+      color: rgba(245, 245, 220, 0.753);
+      font-size: 36px;
+      font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 600px;
+      position: relative;
+      top: 130px;
+    
+  }
+
+  .meun-3-p{
+      color: rgba(255, 255, 255, 0.781);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 600px;
+    font-size:19px;
+    text-align: center;
+    position: relative;
+    top: 120px;}
+    
+
+
+  /* !                        meun 4 */
+  .image-meun-4{
+      background-image: url(./Images/menu-4a.jpg);
+        height: 320px;
+      width: 85%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      overflow: hidden;
+      Border-radius: 5px;
+      position: relative;
+      left: 50px;
+  }
+
+  .lanyer-meun-4{
+        background-color:  rgba(68, 64, 64, 0.466);
+      height: 400px;
+      width: 100%;
+      border-radius: 10px 10px 50% 50%;
+  }
+
+
+
+  .meun-4-h2{
+      color: rgba(245, 245, 220, 0.753);
+      font-size: 36px;
+      font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 600px;
+      position: relative;
+      top: 130px;
+    
+  }
+
+  .meun-4-p{
+      color: rgba(255, 255, 255, 0.781);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 600px;
+    font-size:19px;
+    text-align: center;
+    position: relative;
+    top: 120px;}
+
+  } 
+}   
+
