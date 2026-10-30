@@ -6,6 +6,8 @@ A responsive seafood restaurant website built using **HTML, CSS, JavaScript, and
 
 **[Visit Seafood Restaurant Website](https://hamadfayrouz8-gif.github.io/Seafood-Restaurant-/)**
 
+![Seafood Restaurant Website Preview](Images/portfolio-preview.png) 
+
 ## 📌 About the Project
 
 Seafood Restaurant is a multi-page website developed as a front-end web development project. It focuses on website structure, styling, navigation, and responsive design.
